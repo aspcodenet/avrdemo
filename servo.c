@@ -1,11 +1,14 @@
+//https://wokwi.com/projects/364340216052770817
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include  "servo.h "
  
-#define TIME_VALUE	(40000)
+#define TIME_VALUE	(40000) 
 #define RESET_VALUE	(65636ul-TIME_VALUE)
-#define STOP_VALUE	(TIME_VALUE*0.075)
-#define RANGE		(TIME_VALUE*0.025)
+#define STOP_VALUE	(TIME_VALUE*0.076)
+//(TIME_VALUE*0.075)
+#define RANGE		(TIME_VALUE*0.0482)
+// (TIME_VALUE*0.025)
  
 ISR(TIMER1_OVF_vect)
 {

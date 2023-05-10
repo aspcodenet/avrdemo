@@ -17,9 +17,10 @@
 #define YELLOW 1
 #define GREEN 0
 
+
 int main(void)
 {
-
+  mainservo();
   lcd_init();
   lcd_enable_blinking();
   lcd_enable_cursor();

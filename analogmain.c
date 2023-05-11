@@ -6,6 +6,8 @@
 #define ANALOG_PIN 0
 void mainanalog()
 {
+    // https://wokwi.com/projects/364424182390604801
+    
     init_serial();
     while(1) {
         uint16_t analog_value = analogRead(ANALOG_PIN);

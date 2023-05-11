@@ -20,6 +20,8 @@
 
 int main(void)
 {
+  
+  mainanalog();
   mainservo();
   lcd_init();
   lcd_enable_blinking();

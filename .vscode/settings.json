@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "servo.h": "c"
+        "servo.h": "c",
+        "analogread.h": "c",
+        "io.h": "c"
     }
 }

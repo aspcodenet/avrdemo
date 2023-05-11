@@ -6,12 +6,12 @@ AVRSIZE="C:\avr\bin\avr-size"
 OBJISP="C:\avr\bin\avrdude"
 MCU=atmega328p
 CFLAGS=-Wall -Wextra  -Wundef -pedantic \
-		-Os -std=gnu99 -DF_CPU=16000000UL -mmcu=${MCU}
+		-Os -std=gnu99 -DF_CPU=16000000UL -mmcu=${MCU} -DBAUD=19200
 LDFLAGS=-mmcu=$(MCU)
 PORT=\\\\.\\COM3
 BIN=avrdemo
 OUT=${BIN}.hex
-SOURCES = main.c lcd.c servo.c servomain.c
+SOURCES = main.c lcd.c servo.c servomain.c analogmain.c analogRead.c uart.c
 
 DEBUG?=1
 
